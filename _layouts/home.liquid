@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
+    <meta name="author" content="Shenling Qiu">
+    <meta name="theme-color" content="#142925">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23142925'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='%23b1eddb'%3ES%3C/text%3E%3C/svg%3E"
+    >
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="wrap nav" aria-label="Primary">
+        <a class="wordmark" href="#top">Shenling Qiu</a>
+        <ul class="nav-links">
+          <li><a href="#research">Research</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#background">Background</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="masthead" aria-labelledby="name">
+        <div class="wrap masthead-inner">
+          <div class="identity">
+            <p class="label">Embodied AI / Robot Learning</p>
+            <h1 id="name">Shenling Qiu</h1>
+          </div>
+          <div class="portrait">
+            <img src="{{ '/assets/img/photo_v1-800.webp' | relative_url }}" alt="Shenling Qiu working at a laptop" width="800" height="534">
+          </div>
+          <p class="intro">
+            I study how robots learn to act: what vision-language-action models acquire during pretraining, and how agents turn high-level plans into
+            reliable robot behavior.
+          </p>
+          <p class="affiliation">Galaxea AI Pretraining Team <span aria-hidden="true">/</span> Fudan University</p>
+          <ul class="contact-links masthead-links" aria-label="Contact">
+            <li><a href="mailto:slqiu24@m.fudan.edu.cn">Email</a></li>
+            <li><a href="https://github.com/VagRant2333" rel="me">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/shenling-qiu-b666793b8" rel="me">LinkedIn</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="wrap section" id="research" aria-labelledby="research-title">
+        <header class="section-heading">
+          <p class="label">Current research</p>
+          <h2 id="research-title">Pretraining &amp; control</h2>
+        </header>
+        <div class="research-content">
+          <article class="current-role">
+            <p class="status">Current affiliation</p>
+            <h3>Galaxea AI</h3>
+            <p class="role">
+              Pretraining Team &middot; Advised by <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/ZhaoHang.htm">Prof. Hang Zhao</a> (Tsinghua
+              University)
+            </p>
+            <p>I contribute to an upcoming world action model and the team&rsquo;s next-generation embodied foundation model.</p>
+            <p class="data-contribution">
+              <strong>Pretraining data.</strong> I&rsquo;m responsible for key parts of the robot data pipeline, including data processing algorithms
+              and database management. My work earned high performance ratings for three consecutive months.
+            </p>
+          </article>
+          <div class="research-topics">
+            <article class="topic">
+              <p class="label">Work in progress</p>
+              <h3>VLA Pretraining Dynamics</h3>
+              <p>I study when useful robot capabilities emerge during pretraining and how data and training choices shape what a policy learns.</p>
+            </article>
+            <article class="topic">
+              <p class="label">Work in progress</p>
+              <h3>Robot-Use Agents &amp; Dual Systems</h3>
+              <p>I explore dual-system architectures that pair high-level agent planning with low-level robot policies for physical execution.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="work-band">
+        <section class="wrap section" id="work" aria-labelledby="work-title">
+          <header class="section-heading">
+            <p class="label">Publication</p>
+            <h2 id="work-title">Selected work</h2>
+          </header>
+          <article class="paper">
+            <p class="status">RSS 2026 &middot; RoboData Workshop</p>
+            <h3>
+              <a href="https://arxiv.org/abs/2606.08520"
+                >Two Bridges, One Pathway: From VLMs to Generalizable VLAs with Embodied Trajectory-Coupled Data</a
+              >
+            </h3>
+            <p class="authors">
+              Linqi Yin*, Shiduo Zhang*, <strong>Shenling Qiu*</strong>, Chenxin Li, Zhaoyang Fu, Lei Xiao, Xiang Wang, Chenchen Yang, Zhe Xu,
+              Pengfang Qian, Jingjing Gong, Xipeng Qiu, Xuanjing Huang, Yu-Gang Jiang
+            </p>
+            <p class="note">* Equal contribution</p>
+            <p>
+              We use supervision derived from robot trajectories to bridge the input and training-objective gaps between vision-language models and
+              robot policies.
+            </p>
+            <a class="paper-link" href="https://arxiv.org/abs/2606.08520">Read on arXiv</a>
+          </article>
+        </section>
+      </div>
+
+      <section class="wrap section" id="background" aria-labelledby="background-title">
+        <header class="section-heading">
+          <p class="label">Education &amp; experience</p>
+          <h2 id="background-title">Background</h2>
+        </header>
+        <div class="timeline">
+          <article>
+            <p class="label">2024 &ndash; Present</p>
+            <h3>Fudan University</h3>
+            <p>Computer Science and Technology, Honors Class. GPA 3.91/4.00; ranked second in the school in 2024&ndash;25.</p>
+            <div class="honors">
+              <h4 id="honors-title" class="label">Honors &amp; programs</h4>
+              <ul class="honors-list" aria-labelledby="honors-title" role="list">
+                <li>
+                  <strong>National Scholarship</strong>
+                  <span>National undergraduate award for academic excellence.</span>
+                </li>
+                <li>
+                  <strong>First-Class Scholarship</strong>
+                  <span>2026 recipient.</span>
+                </li>
+                <li>
+                  <strong>Outstanding Student Leader</strong>
+                  <span>Two-time recipient, most recently in 2026.</span>
+                </li>
+                <li>
+                  <strong>Fudan Siyuan Program</strong>
+                  <span>Selected for Fudan's undergraduate program in leadership and public service.</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <p class="label">2025 &ndash; 2026</p>
+            <h3>Fudan Natural Language Processing Laboratory</h3>
+            <p>
+              With Prof. Xipeng Qiu, I worked on VLM-to-VLA transfer and ran robot learning experiments on UR5e, WidowX, and Franka. I also trained
+              and deployed policies for the Unitree G1 and Fourier GR1 humanoids.
+            </p>
+          </article>
+          <article>
+            <p class="label">2025 &ndash; 2026</p>
+            <h3>AI for Elite Sports Training</h3>
+            <p>
+              I contributed to a markerless 3D motion analysis system used by the Chinese national diving team. The project won the Shanghai Challenge
+              Cup Grand Prize.
+            </p>
+          </article>
+          <article>
+            <p class="label">2025 &ndash; 2026</p>
+            <h3>Shanghai Innovation Institute</h3>
+            <p>
+              In the embodied intelligence preparatory program, I trained standing and walking policies for the Unitree Go2 in Isaac Lab and deployed
+              them on the robot.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>Shenling Qiu</p>
+        <ul class="contact-links" aria-label="Contact">
+          <li><a href="mailto:slqiu24@m.fudan.edu.cn">Email</a></li>
+          <li><a href="https://github.com/VagRant2333" rel="me">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/shenling-qiu-b666793b8" rel="me">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
